@@ -1,2 +1,5 @@
 Code for Hall bar simulation in FEniCS
 Note that FEniCS works best in a Mac or linux environment
+
+The main file is "T0T1_CommentedGit.py". This has a commented python program for performing simulations with T=0 on the bottom and T=1 on top.
+The remaining files are similar code with different boundary conditions.
