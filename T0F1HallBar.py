@@ -414,7 +414,7 @@ wmax = 1.5
 fig = plt.figure()
 a1 = fig.add_axes([0,0,1,1])
 ws = np.linspace(wmin, wmax, runs)
-copper = cmx.get_cmap('cool', runs)
+copper = cmx.get_cmap('plasma', runs)
 for i in range(0, runs):
     print(i)
     w = ws[i]
@@ -430,7 +430,7 @@ for i in range(0, runs):
     ampb = ampb/maxi
     vals = vals/maxi
         
-    print('New Values for length of ' + str(l))
+    print('New Values for width of ' + str(w))
     pred = Dyz*(w - 2*depth)/(Dz*l)
     
     a1.plot(pts, vals/pred, label = str(np.round(100*w)/100), color = copper(i))
