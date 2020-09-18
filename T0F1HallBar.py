@@ -431,7 +431,7 @@ for i in range(0, runs):
     vals = vals/maxi
         
     print('New Values for length of ' + str(l))
-    pred = Dyz*w/(Dz*l)
+    pred = Dyz*(w - 2*depth)/(Dz*l)
     
     a1.plot(pts, vals/pred, label = str(np.round(100*w)/100), color = copper(i))
 a1.plot(np.linspace(0, l, 100), np.ones(100), color = "black")
