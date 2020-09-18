@@ -439,7 +439,7 @@ for i in range(0, runs):
     if(np.mean(s) < 0):
         vals = vals*-1
         
-    print('New Values for length of ' + str(w))
+    print('New Values for width of ' + str(w))
     pred = Dyz*(w - 2*depth)/(Dz*l)
     
     a1.plot(pts, vals/pred, label = str(np.round(100*w)/100), color = copper(i))
