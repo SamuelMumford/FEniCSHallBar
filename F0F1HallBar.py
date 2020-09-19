@@ -442,11 +442,11 @@ for i in range(0, runs):
     print('New Values for width of ' + str(w))
     pred = Dyz*(w - 2*depth)/(Dz*l)
     
-    a1.plot(pts, vals/pred, label = str(np.round(100*w)/100), color = copper(i))
+    a1.plot(pts, vals/pred, label = str(np.round(100*w)/100) + 'u', color = copper(i))
 a1.plot(np.linspace(0, l, 100), np.ones(100), color = "black")
 a1.set_ylim(0,1.2)
 a1.legend()
 plt.ylabel('Dxy/Dxy_0')
-plt.xlabel('z (u)')
+plt.xlabel('x (u)')
 plt.savefig("TySignalQSInkQSource.pdf", bbox_inches='tight')
 plt.show()
